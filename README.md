@@ -26,3 +26,14 @@ sudo apt-get install qemu-system-arm
 ```
 qemu-system-arm --version
 ```
+
+### p21 arm-none-eabi-gdb 설치 안되는 경우
+gdb-multiarch를 설치
+```
+sudo apt-get update -y
+sudo apt-get install -y gdb-multiarch
+gdb-multiarch
+```
+
+**Reference**
+https://devtak0623.medium.com/os-arm-none-eabi-gdb-%EC%84%A4%EC%B9%98-%EB%AC%B8%EC%A0%9C-3fbc8bcce7c1
