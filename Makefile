@@ -6,7 +6,7 @@ AS = arm-none-eabi-as
 LD = arm-none-eabi-ld
 OC = arm-none-eabi-objcopy
 
-LINKER_SCRPIT = ./navilos.ld
+LINKER_SCRIPT = ./navilos.ld
 
 ASM_SRCS = $(wildcard boot/*.S)
 ASM_OBJS = $(patsubst boot/%.S, build/%.o, $(ASM_SRCS))
