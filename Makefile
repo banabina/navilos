@@ -65,4 +65,3 @@ build/%.os: %.S
 build/%.o: %.c
 	mkdir -p $(shell dirname $@)
 	$(CC) -march=$(ARCH) -mcpu=$(MCPU) -marm $(INC_DIRS) $(CFLAGS) -o $@ $<
-	
