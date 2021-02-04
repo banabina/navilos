@@ -3,7 +3,7 @@
 
 #define MSG_Q_SIZE_BYTE		512
 
-typedef enum KernelMsgQ_t
+typedef enum KernelMsgQ
 {
 	KernelMsgQ_Task0,
 	KernelMsgQ_Task1,
@@ -12,7 +12,7 @@ typedef enum KernelMsgQ_t
 	KernelMsgQ_Num
 } KernelMsgQ_t;
 
-typedef struct KernelCirQ_t
+typedef struct KernelCirQ
 {
 	uint32_t front;
 	uint32_t rear;
